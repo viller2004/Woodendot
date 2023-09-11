@@ -1,0 +1,37 @@
+.body {
+  width: 1440px;
+}
+
+.examples-slider__swiper {
+  width: 1120px;
+  height: 550px;
+}
+
+.examples-slider__swiper .swiper-slide a {
+  position: absolute;
+  z-index: 2;
+  top: 41px;
+  right: 20px;
+}
+
+.reviews__swiper {
+  width: 1242px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.examples__pics {
+  font-size: 0;
+}
