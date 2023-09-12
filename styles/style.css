@@ -66,6 +66,7 @@ ul {
 /* main */
 
 .hero {
+  font-size: 0;
   position: relative;
 }
 
@@ -112,6 +113,25 @@ ul {
   color: #fff;
   background-color: #050505;
   border-radius: 1px 1px 0px 0px;
+}
+
+/* pluses */
+
+.pluses {
+  padding: 53px 110px 53px 70px;
+}
+
+.pluses__list {
+}
+
+.pluses__item:last-child {
+  margin-left: auto;
+}
+
+.pluses__text {
+  margin: 0;
+  font: 400 13px/24px "Roboto", sans-serif;
+  letter-spacing: 0.2px;
 }
 
 .examples-slider__swiper {
