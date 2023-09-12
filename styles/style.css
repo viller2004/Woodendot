@@ -1,10 +1,22 @@
-:root {
-  --color-black: #000;
+/* global */
+
+html {
+  box-sizing: border-box;
 }
 
-/* global */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 a {
+  color: inherit;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 ul {
@@ -48,7 +60,7 @@ ul {
 
 .header__nav-item-link {
   font-size: 17px;
-  color: var(--color-black);
+  color: #000;
 }
 
 /* main */
@@ -65,12 +77,41 @@ ul {
   position: absolute;
   margin: 0;
   max-width: 807px;
+  z-index: 1;
   top: 257px;
   left: 316px;
   text-align: center;
   font: bold 27px/38.4px "Roboto", sans-serif;
   letter-spacing: 0.2px;
   color: #fff;
+}
+
+.hero__link {
+  position: absolute;
+  padding: 6px 40px;
+  z-index: 1;
+  top: 365px;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.hero__link-question {
+  position: absolute;
+  padding: 15px 30px;
+  top: 645px;
+  left: 20px;
+  font: 400 15px/20px "Palatino Linotype", sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: #050505;
+  border-radius: 1px 1px 0px 0px;
 }
 
 .examples-slider__swiper {
