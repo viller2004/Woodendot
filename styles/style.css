@@ -30,7 +30,7 @@ ul {
 
 .body {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   font-family: "Cardo", Helvetica, sans-serif;
   background-color: #f7f7f7;
 }
@@ -69,21 +69,17 @@ ul {
 /* main */
 
 .hero {
-  font-size: 0;
   position: relative;
-}
-
-.hero__img {
-  object-fit: cover;
+  font-size: 0;
 }
 
 .hero__title {
   position: absolute;
   margin: 0;
-  max-width: 807px;
   z-index: 1;
   top: 257px;
-  left: 316px;
+  left: 50%;
+  transform: translate(-50%);
   text-align: center;
   font: bold 27px/38.4px "Roboto", sans-serif;
   letter-spacing: 0.2px;
@@ -109,7 +105,7 @@ ul {
 .hero__link-question {
   position: absolute;
   padding: 15px 30px;
-  top: 645px;
+  top: 92%;
   left: 20px;
   font: 400 15px/20px "Palatino Linotype", sans-serif;
   text-align: center;
@@ -148,27 +144,27 @@ ul {
 }
 
 .pluses__ico-shipping {
-  background-image: url("../img/free-shipping.png");
   width: 60px;
   height: 30px;
+  background-image: url("../img/free-shipping.png");
 }
 
 .pluses__ico-avard {
-  background-image: url("../img/awarded-product-design.png");
   width: 50px;
   height: 48px;
+  background-image: url("../img/awarded-product-design.png");
 }
 
 .pluses__ico-eco {
-  background-image: url("../img/ecofriendly-approach.png");
   width: 34px;
   height: 42px;
+  background-image: url("../img/ecofriendly-approach.png");
 }
 
 .pluses__ico-craft {
-  background-image: url("../img/crafted-in-spain.png");
   width: 47px;
   height: 47px;
+  background-image: url("../img/crafted-in-spain.png");
 }
 
 .pluses__text {
@@ -176,6 +172,35 @@ ul {
   margin: 0;
   font: 400 13px/24px "Roboto", sans-serif;
   letter-spacing: 0.2px;
+}
+
+/* examples__pics */
+
+.examples__pics {
+  flex-wrap: wrap;
+  margin-bottom: 115px;
+}
+
+/* goods */
+
+.goods__card:nth-child(odd) .card__image {
+  order: -1;
+}
+
+.card__text-wrap {
+  flex-direction: column;
+  padding: 48px 48px 0 48px;
+}
+
+.card__text-wrap h3,
+h4,
+p {
+  margin: 0;
+}
+
+.card__title {
+  margin: 0;
+  font: 700 32px/56px "Roboto", sans-serif;
 }
 
 .examples-slider__swiper {
@@ -206,8 +231,4 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.examples__pics {
-  font-size: 0;
 }
