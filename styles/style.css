@@ -182,25 +182,92 @@ ul {
 }
 
 /* goods */
+.goods {
+  margin-bottom: 60px;
+}
 
-.goods__card:nth-child(odd) .card__image {
+.goods__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.goods__card:nth-of-type(even) .card__image {
   order: -1;
 }
 
 .card__text-wrap {
+  position: relative;
   flex-direction: column;
+  justify-content: center;
   padding: 48px 48px 0 48px;
-}
-
-.card__text-wrap h3,
-h4,
-p {
-  margin: 0;
+  color: #000;
 }
 
 .card__title {
-  margin: 0;
+  margin: 0 0 4px 0;
   font: 700 32px/56px "Roboto", sans-serif;
+}
+
+.card__subtitle {
+  margin: 0 0 18px 0;
+  font: 400 italic 19px/38px "Cardo";
+}
+
+.card__price {
+  margin: 0 0 22px 0;
+  font: 400 15px/28px "Cardo";
+}
+
+.card__descr {
+  margin: 0 0 25px 0;
+  font: 400 18px/30px "Cardo";
+  color: #525252;
+}
+
+.card__options {
+  margin: 0;
+  font: 400 16px/27px "Cardo";
+  color: #525252;
+}
+
+.goods__card:nth-of-type(odd) .card__title,
+.goods__card:nth-of-type(odd) .card__subtitle,
+.goods__card:nth-of-type(odd) .card__price,
+.goods__card:nth-of-type(odd) .card__descr,
+.goods__card:nth-of-type(odd) .card__options {
+  text-align: end;
+}
+
+.card__link {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #000;
+  padding-top: 48px;
+}
+
+.goods__card:nth-of-type(odd) .card__link {
+  align-self: flex-end;
+}
+
+.card__label {
+  margin: 0;
+  position: absolute;
+  font: 400 italic 14px/30px "Cardo";
+  color: #bc1414;
+  top: 48px;
+  right: 48px;
+}
+
+.goods__card:nth-of-type(even) .card__label {
+  right: 0;
+  left: 48px;
+}
+
+.card__rewards-ico {
+  margin-top: auto;
+  width: 230px;
+  height: 70px;
+  background: url("../img/rewards.png") no-repeat;
 }
 
 .examples-slider__swiper {
