@@ -8,7 +8,7 @@ var swiper1 = new Swiper(".examples-slider__swiper", {
   loop: true,
 });
 
-var swiper2 = new Swiper(".reviews__swiper", {
+var swiper2 = new Swiper(".reviews", {
   pagination: {
     el: ".swiper-pagination2",
     clickable: true,

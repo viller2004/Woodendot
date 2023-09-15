@@ -333,9 +333,33 @@ ul {
   background: #000;
 }
 
-.reviews__swiper {
-  width: 1242px;
+/* reviews */
+
+.reviews {
+  margin-bottom: 96px;
+  padding-bottom: 60px;
+  width: 1190px;
+}
+
+.reviews__slide {
   text-align: center;
+}
+
+.reviews__slide-blockquote {
+  margin: 0;
+}
+
+.reviews__slide-blockquote-text {
+  margin: 0;
+  margin-bottom: 37px;
+  font: 400 italic 20px/30px "Cardo";
+  color: #020202;
+}
+
+.reviews__slide-blockquote-author {
+  margin: 0;
+  font: 400 normal 15px/21px "Cardo";
+  color: #000;
 }
 
 .visually-hidden {
