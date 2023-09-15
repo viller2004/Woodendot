@@ -14,5 +14,4 @@ var swiper2 = new Swiper(".reviews", {
     clickable: true,
     dynamicBullets: true,
   },
-  loop: true,
 });
