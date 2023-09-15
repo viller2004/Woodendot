@@ -240,6 +240,7 @@ ul {
 .card__link {
   align-self: flex-start;
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
   border-bottom: 1px solid #000;
   padding-top: 48px;
@@ -264,11 +265,15 @@ ul {
 }
 
 .card__rewards-ico {
-  margin-top: auto;
-  width: 230px;
   height: 70px;
   background: url("../img/rewards.png") no-repeat;
 }
+
+.goods__card:nth-of-type(odd) .card__rewards-ico {
+  background-position: right;
+}
+
+/* examples-slider */
 
 .examples-slider__swiper {
   width: 1120px;
