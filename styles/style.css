@@ -276,8 +276,31 @@ ul {
 /* examples-slider */
 
 .examples-slider__swiper {
+  margin-bottom: 135px;
+  padding-bottom: 29px;
   width: 1120px;
-  height: 550px;
+  font-size: 0;
+}
+
+.examples-slider__title {
+  margin: 0 0 20px 0;
+  font: 700 30px/39px "Cardo";
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.examples-slider__text {
+  margin: 0 0 37px 0;
+  font: 400 18px/34px "Cardo";
+  text-align: center;
+  color: #000;
+}
+
+.swiper-slide__link {
+  font: 400 14px/28px "Cardo";
+  color: #fff;
+  background: url("../img/insta-ico.png") no-repeat left;
+  padding-left: 20px;
 }
 
 .examples-slider__swiper .swiper-slide a {
@@ -285,6 +308,29 @@ ul {
   z-index: 2;
   top: 41px;
   right: 20px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 2.5px);
+}
+
+.swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 0%;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
 }
 
 .reviews__swiper {
