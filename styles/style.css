@@ -158,7 +158,7 @@ ul {
 }
 
 .pluses__item:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 80px;
 }
 
 .pluses__item:last-child {
@@ -422,3 +422,26 @@ ul {
 }
 
 /* talk-about-us */
+
+.talk-about-us {
+  padding: 0 10px;
+  margin-bottom: 83px;
+}
+
+.talk-about-us__title {
+  margin-bottom: 41px;
+  font: 400 20px/26px "Cardo";
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.talk-about-us__companies-logos {
+  height: 104px;
+  background: url("/img/сompanies.png");
+}
+
+/* footer */
+
+.footer {
+  background-color: #e9e9e9;
+}
