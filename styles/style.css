@@ -97,6 +97,10 @@ ul {
 
 /* main */
 
+.main {
+  margin-bottom: 84px;
+}
+
 .hero {
   position: relative;
   font-size: 0;
@@ -425,7 +429,6 @@ ul {
 
 .talk-about-us {
   padding: 0 10px;
-  margin-bottom: 83px;
 }
 
 .talk-about-us__title {
@@ -443,5 +446,122 @@ ul {
 /* footer */
 
 .footer {
+  padding: 50px 150px 0 140px;
   background-color: #e9e9e9;
+}
+
+.footer__top {
+  justify-content: space-between;
+}
+
+.footer-nav {
+  padding: 10px;
+  gap: 20px;
+}
+
+.footer-nav__section {
+  margin-bottom: 17px;
+  width: 208px;
+  text-align: center;
+}
+
+.footer-nav__section-title {
+  font: 400 normal 21px/21px "Cardo";
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.footer-nav__links {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer-nav__link {
+  font: 400 normal 15px/20px "Cardo";
+  color: #000;
+}
+
+.footer__top-right {
+  width: 342px;
+  padding: 0 37px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__top-right-text {
+  margin-bottom: 17px;
+  font: 400 normal 15px/27.85px "Cardo";
+  text-align: center;
+  color: #000;
+}
+
+.footer-sub__btn {
+  padding: 5px 41px;
+  border: 1px solid #000;
+  background: #fff;
+  font: 400 normal 15px/15px "Cardo";
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.footer-certificates {
+  gap: 40px;
+  margin-bottom: 19px;
+}
+
+.footer-ico {
+  width: 66px;
+  height: 66px;
+}
+
+.footer-certificates__fsc-ico {
+  background: url("../img/fsc.png") no-repeat center;
+}
+
+.footer-certificates__onetreeplanted-ico {
+  background: url("../img/one-tree-planted.png") no-repeat center;
+}
+
+.footer__top-rating-trustpilot {
+  width: 239px;
+  height: 45px;
+  background: url("../img/trustpilot.png") no-repeat center;
+}
+
+.footer__bottom {
+  padding: 10px 69px 50px 90px;
+}
+
+.footer__bottom-wrap {
+  height: 44px;
+}
+
+.footer__bottom-copy {
+  align-self: end;
+  font: 400 normal 12px/22px "Cardo";
+  color: #000;
+  margin-right: 101px;
+}
+
+.footer__bottom-payment {
+  padding: 0;
+  margin-right: auto;
+  align-self: start;
+}
+
+.footer__bottom-payment-list {
+  gap: 8px;
+}
+
+.footer__bottom-payment-item {
+  width: 66px;
+  height: 28px;
+}
+
+.footer__bottom-legal {
+  align-self: center;
+  font: 400 normal 12px/22px "Cardo";
+  color: #000;
 }
