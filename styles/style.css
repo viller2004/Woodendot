@@ -269,6 +269,8 @@ ul {
   align-self: flex-start;
   border-bottom: 1px solid #000;
   padding-top: 48px;
+  font: 400 17px/22px "Roboto", sans-serif;
+  color: #000;
 }
 
 .goods__card:nth-of-type(odd) .card__link {
